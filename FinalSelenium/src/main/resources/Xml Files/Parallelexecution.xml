@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallelexecution" thread-count="3" parallel="tests">
+<test name="smokeRun">
+<classes>
+<class name="com.FinalSelenium.tests.LoginTest">
+</class >
+<class name="com.supermarket.tests.AdminUserTest">
+</class>
+</classes>
+</test>
+<test name="reggression">
+<classes>
+<class name="com.supermarket.tests.AdminUserTest">
+</class >
+</classes>
+</test>
+</suite>
